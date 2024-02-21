@@ -16,7 +16,8 @@ namespace Osorio___Week_4_Assignment
     {
         public Form1()
         {
-            InitializeComponent();            
+            InitializeComponent(); 
+            SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
         }
 
        
@@ -115,6 +116,11 @@ namespace Osorio___Week_4_Assignment
 
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = people;
+
+            textBoxName.Clear();
+            textBoxAge.Clear();
+            textBoxBirthyear.Clear();
+            textBoxGender.Clear();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
